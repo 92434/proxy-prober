@@ -20,7 +20,7 @@ if not os.path.exists(outputdir):
 
 #Opening creidts
 cprint(figlet_format('Proxy Prober', font='big'), 'green', attrs=['bold'])
-cprint(figlet_format(' v.3.2 By Chrominic', font='small'), 'red')
+cprint(figlet_format(' v.3.2 By HydraPhoenix', font='small'), 'red')
 
 #User input options
 while True:
