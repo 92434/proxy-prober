@@ -16,7 +16,7 @@ def socks4scrape():
 
     #Opening credits
     cprint(figlet_format('Proxy Prober', font='big'), 'green', attrs=['bold'])
-    cprint(figlet_format(' v.3.2 By Chrominic', font='small'), 'red')
+    cprint(figlet_format(' v.3.2 By HydraPhoenix', font='small'), 'red')
 
     #Clear contents of the output file
     file = open('OUTPUT/socks4proxies.txt', 'w')
