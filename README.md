@@ -30,5 +30,5 @@ Termcolor v1.1.0
 ## Images:
 
 
-![Proxy Prober CLI](https://github.com/HydraPhoenix/proxy-prober-cli/raw/master/cmd_I7n7EJLovV.png "Proxy Prober CLI v3.2")
-![Proxy Prober CLI](https://github.com/HydraPhoenix/proxy-prober-cli/raw/master/cmd_fqckRP1IPK.png "Proxy Prober CLI v3.2")
+![Proxy Prober CLI](https://github.com/HydraPhoenix/proxy-prober-cli/raw/master/titlescreen.png "Proxy Prober CLI v3.2")
+![Proxy Prober CLI](https://github.com/HydraPhoenix/proxy-prober-cli/raw/master/scrapescreen.png "Proxy Prober CLI v3.2")
