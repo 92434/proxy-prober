@@ -1,6 +1,6 @@
 # Proxy Prober CLI v.3.2
 
-A simple yet powerful proxy scraper made by Chrominic
+A simple yet powerful proxy scraper made by HydraPhoenix
 
 ## Features:
 
@@ -30,5 +30,5 @@ Termcolor v1.1.0
 ## Images:
 
 
-![Proxy Prober CLI](https://github.com/Chrominic/proxy-prober-cli/raw/master/cmd_I7n7EJLovV.png "Proxy Prober CLI v3.2")
-![Proxy Prober CLI](https://github.com/Chrominic/proxy-prober-cli/raw/master/cmd_fqckRP1IPK.png "Proxy Prober CLI v3.2")
+![Proxy Prober CLI](https://github.com/HydraPhoenix/proxy-prober-cli/raw/master/cmd_I7n7EJLovV.png "Proxy Prober CLI v3.2")
+![Proxy Prober CLI](https://github.com/HydraPhoenix/proxy-prober-cli/raw/master/cmd_fqckRP1IPK.png "Proxy Prober CLI v3.2")
