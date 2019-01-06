@@ -2,14 +2,14 @@
 
 A simple yet powerful proxy scraper made by HydraPhoenix. Requires Python (preferably v3.7.1+).
 
-## Status:
+## Status
 
 [![GitHub license](https://img.shields.io/github/license/HydraPhoenix/proxy-prober-cli.svg)](https://raw.githubusercontent.com/HydraPhoenix/proxy-prober-cli/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/HydraPhoenix/proxy-prober-cli.svg)](https://github.com/HydraPhoenix/proxy-prober-cli/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/HydraPhoenix/proxy-prober-cli.svg)](https://github.com/HydraPhoenix/proxy-prober-cli/issues)
 [![GitHub forks](https://img.shields.io/github/forks/HydraPhoenix/proxy-prober-cli.svg)](https://github.com/HydraPhoenix/proxy-prober-cli/network/members)
 
-## Instructions:
+## Instructions
 
 -Install dependencies
 ```
@@ -23,7 +23,7 @@ cd [path to source]
 python proxyprober.py
 ```
 
-## Features:
+## Features
 
 -Fast scraper. Really fast. Vroom vroom.
 
@@ -37,8 +37,7 @@ python proxyprober.py
 
 -Lightweight and low on resources.
 
-
-## Requirements: 
+## Requirements
 
 -Requests v2.21.0  
 
@@ -48,8 +47,7 @@ python proxyprober.py
 
 -Colorama v0.4.1  
 
-## Images:
-
+## Images
 
 ![Proxy Prober CLI](https://github.com/HydraPhoenix/proxy-prober-cli/raw/master/titlescreen.png "Proxy Prober CLI v3.2")
 ![Proxy Prober CLI](https://github.com/HydraPhoenix/proxy-prober-cli/raw/master/scrapescreen.png "Proxy Prober CLI v3.2")

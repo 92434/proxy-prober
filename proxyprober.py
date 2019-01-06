@@ -1,8 +1,6 @@
 #Import dependencies
 from pyfiglet import figlet_format
-import sys
 import os
-from colorama import init
 from termcolor import cprint
 from ScraperModules.socks4scrape import socks4scrape
 from ScraperModules.httpscrape import httpscrape

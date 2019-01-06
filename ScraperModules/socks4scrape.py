@@ -2,7 +2,6 @@
 import requests
 import re
 import os
-from colorama import init
 from termcolor import cprint
 from pyfiglet import figlet_format
 
@@ -29,7 +28,7 @@ def socks4scrape():
     headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'}
     
     #Send the HTTP requests
-    for socks4url in range(len(socks4urls)):
+    for socks4url in socks4urls:
         print("Scraping SOCKS4 source " + str(socks4url) + "...\n")
         data = requests.get(socks4urls[socks4url], headers=headers)
         proxiesdata = str(data.text)
@@ -38,14 +37,13 @@ def socks4scrape():
         matches = re.finditer(regex, proxiesdata)
 
         #List the proxy matches
-        for matchNum, match in enumerate(matches, start=1):
+        for match in enumerate(matches, start=1):
 
             #Save the proxies in ip:port format
             proxies = "{ip}:{port}".format(ip = match.group(1), port = match.group(2))
             file = open('OUTPUT/socks4proxies.txt', 'a')
             file.write("\n" + proxies)
             file.close()
-    
     #Verify that all lines are real proxies
     print("\nVerifying that all lines are proxies...\n")
     textfile = open('OUTPUT/socks4proxies.txt', 'r')

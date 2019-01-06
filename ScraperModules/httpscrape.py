@@ -2,7 +2,6 @@
 import requests
 import re
 import os
-from colorama import init
 from termcolor import cprint
 from pyfiglet import figlet_format
 
@@ -29,7 +28,7 @@ def httpscrape():
     headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'}
     
     #Send the HTTP requests
-    for httpurl in range(len(httpurls)):
+    for httpurl in httpurls:
         print("Scraping HTTP source " + str(httpurl) + "...\n")
         data = requests.get(httpurls[httpurl], headers=headers)
         proxiesdata = str(data.text)
@@ -38,14 +37,13 @@ def httpscrape():
         matches = re.finditer(regex, proxiesdata)
 
         #List the proxy matches
-        for matchNum, match in enumerate(matches, start=1):
+        for match in enumerate(matches, start=1):
 
             #Save the proxies in ip:port format
             proxies = "{ip}:{port}".format(ip = match.group(1), port = match.group(2))
             file = open('OUTPUT/httpproxies.txt', 'a')
             file.write("\n" + proxies)
             file.close()
-    
     #Verify that all lines are real proxies
     print("\nVerifying that all lines are proxies...\n")
     textfile = open('OUTPUT/httpproxies.txt', 'r')
