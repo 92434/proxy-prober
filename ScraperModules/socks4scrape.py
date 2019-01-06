@@ -25,7 +25,7 @@ def socks4scrape():
     #Variables
     regex = r"((?:\d{1,3}\.?){4})\D+(\d+)"
     socks4urls = ["https://www.socks-proxy.net/", "https://www.xroxy.com/free-proxy-lists/?port=&type=Socks4&ssl=&country=&latency=&reliability=7500", "https://www.my-proxy.com/free-socks-4-proxy.html", "https://www.proxy-list.download/api/v1/get?type=socks4"]
-    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'} 
+    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'}
     #Send the HTTP requests
     for socks4url in socks4urls:
         print("Scraping SOCKS4 source " + str(socks4url) + "...\n")
