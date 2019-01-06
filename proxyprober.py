@@ -38,5 +38,4 @@ elif choice == 2:
     socks4scrape()
 elif choice == 3:
     socks5scrape()
-    
 input()
