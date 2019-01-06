@@ -3,6 +3,7 @@ import requests
 import re
 from Functions.clear import clear
 from Functions.openingcredits import openingcredits
+import variables
 
 #Create the socks4scrape function
 def socks4scrape():
@@ -17,19 +18,14 @@ def socks4scrape():
     file = open('OUTPUT/socks4proxies.txt', 'w')
     file.write("")
     file.close()
-
-    #Variables
-    regex = r"((?:\d{1,3}\.?){4})\D+(\d+)"
-    urls = ["https://www.socks-proxy.net/", "https://www.xroxy.com/free-proxy-lists/?port=&type=Socks4&ssl=&country=&latency=&reliability=7500", "https://www.my-proxy.com/free-socks-4-proxy.html", "https://www.proxy-list.download/api/v1/get?type=socks4"]
-    headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'}
-    #Send the HTTP requests
-    for urlno, url in enumerate (urls):
+    
+    for urlno, url in enumerate (variables.socks4urls):
         print("Scraping SOCKS4 source " + str(urlno) + "...\n")
-        data = requests.get(url, headers=headers)
+        data = requests.get(url, headers=variables.headers)
         proxiesdata = str(data.text)
 
         #Look for regex matches in the html body of the websites
-        matches = re.finditer(regex, proxiesdata)
+        matches = re.finditer(variables.regex, proxiesdata)
 
         #List the proxy matches
         for matchnumber, match in enumerate(matches, start=1):
