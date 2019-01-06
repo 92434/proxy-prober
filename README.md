@@ -8,7 +8,7 @@ A simple yet powerful proxy scraper made by HydraPhoenix. Requires Python (prefe
 [![GitHub license](https://img.shields.io/github/license/HydraPhoenix/proxy-prober-cli.svg)](https://raw.githubusercontent.com/HydraPhoenix/proxy-prober-cli/master/LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/HydraPhoenix/proxy-prober-cli.svg)](https://github.com/HydraPhoenix/proxy-prober-cli/stargazers)
 [![GitHub issues](https://img.shields.io/github/issues/HydraPhoenix/proxy-prober-cli.svg)](https://github.com/HydraPhoenix/proxy-prober-cli/issues)
-[![GitHub forks](https://img.shields.io/github/forks/HydraPhoenix/proxy-prober-cli.svg)](https://github.com/HydraPhoenix/proxy-prober-cli/network/members)
+[![Release Version](https://img.shields.io/badge/release-v3.3-blue.svg)](https://github.com/HydraPhoenix/proxy-prober-cli/)
 
 ## Instructions
 
