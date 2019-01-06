@@ -1,1 +1,6 @@
 language: python
+before_install:
+  - pip install requests
+  - pip install termcolor
+  - pip install pyfiglet
+  - pip install colorama
