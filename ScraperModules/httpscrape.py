@@ -3,7 +3,7 @@ import requests
 import re
 from Functions.clear import clear
 from Functions.openingcredits import openingcredits
-import variables
+from ScraperModules import variables
 
 #Create the httpscrape function
 def httpscrape():
