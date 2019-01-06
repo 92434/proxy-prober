@@ -23,7 +23,7 @@ A simple yet powerful proxy scraper made by HydraPhoenix
 
 -Pyfiglet v0.8.0  
 
-Termcolor v1.1.0  
+-Termcolor v1.1.0  
 
 -Colorama v0.4.1  
 
