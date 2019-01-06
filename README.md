@@ -13,9 +13,11 @@ A simple yet powerful proxy scraper made by HydraPhoenix. Requires Python (prefe
 ## Instructions
 
 -Install dependencies
+
 `pip install -r requirements.txt`
 
 -Run program
+
 `python proxyprober.py`
 
 ## Features
