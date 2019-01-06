@@ -18,7 +18,6 @@ def socks4scrape():
     file = open('OUTPUT/socks4proxies.txt', 'w')
     file.write("")
     file.close()
-    
     for urlno, url in enumerate (variables.socks4urls):
         print("Scraping SOCKS4 source " + str(urlno) + "...\n")
         data = requests.get(url, headers=variables.headers)

@@ -17,7 +17,6 @@ def httpscrape():
     file = open('OUTPUT/httpproxies.txt', 'w')
     file.write("")
     file.close()
-    
     #Send the HTTP requests
     for urlno, url in enumerate (variables.httpurls):
         print("Scraping HTTP source " + str(urlno) + "...\n")
