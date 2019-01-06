@@ -1,0 +1,4 @@
+Requests==2.21.0
+Pyfiglet==0.8.0
+Termcolor==1.1.0
+Colorama==0.4.1
