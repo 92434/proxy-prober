@@ -2,20 +2,17 @@
 import requests
 import re
 import os
-from termcolor import cprint
-from pyfiglet import figlet_format
+from Functions.clear import clear
+from Functions.openingcredits import credits
 
 #Create the socks5scrape function
 def socks5scrape():
 
-    #Create the clear console function
-    def cls():
-        os.system('cls' if os.name=='nt' else 'clear')
-    cls()
+    #Clear console
+    clear()
 
     #Opening credits
-    cprint(figlet_format('Proxy Prober', font='big'), 'green', attrs=['bold'])
-    cprint(figlet_format(' v.3.2 \nBy HydraPhoenix', font='small'), 'red')
+    credits()
 
     #Clear contents of the output file
     file = open('OUTPUT/socks5proxies.txt', 'w')
@@ -27,19 +24,19 @@ def socks5scrape():
     socks5urls = ["https://free-socks.in/", "https://www.xroxy.com/free-proxy-lists/?port=&type=Socks5&ssl=&country=&latency=&reliability=7500", "https://www.my-proxy.com/free-socks-5-proxy.html", "https://www.proxy-list.download/api/v1/get?type=socks5"]
     headers = {'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/57.0.2987.133 Safari/537.36'}
     #Send the HTTP requests
-    for socks5url in socks5urls:
-        print("Scraping SOCKS5 source " + str(socks5url) + "...\n")
-        data = requests.get(socks5urls[socks5url], headers=headers)
+    for urlno, url in enumerate (socks5urls):
+        print("Scraping SOCKS5 source " + str(urlno) + "...\n")
+        data = requests.get(url, headers=headers)
         proxiesdata = str(data.text)
 
         #Look for regex matches in the html body of the websites
         matches = re.finditer(regex, proxiesdata)
 
         #List the proxy matches
-        for match in enumerate(matches, start=1):
-
+        for matchnumber, match in enumerate(matches, start=1):
+            matchnumber = 1
             #Save the proxies in ip:port format
-            proxies = "{ip}:{port}".format(ip = match.group(1), port = match.group(2))
+            proxies = "{ip}:{port}".format(ip = match.group(matchnumber), port = match.group(matchnumber + 1))
             saveproxies = "\n" + proxies
             file = open('OUTPUT/socks5proxies.txt', 'a')
             file.write(saveproxies)

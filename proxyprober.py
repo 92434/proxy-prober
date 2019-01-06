@@ -1,15 +1,13 @@
 #Import dependencies
-from pyfiglet import figlet_format
 import os
-from termcolor import cprint
 from ScraperModules.socks4scrape import socks4scrape
 from ScraperModules.httpscrape import httpscrape
 from ScraperModules.socks5scrape import socks5scrape
+from Functions.openingcredits import credits
+from Functions.clear import clear
 
-#Create the clear console function
-def cls():
-    os.system('cls' if os.name=='nt' else 'clear')
-cls()
+#Clear console
+clear()
 
 #Create output directory
 outputdir = r'.\OUTPUT'
@@ -17,8 +15,7 @@ if not os.path.exists(outputdir):
     os.makedirs(outputdir)
 
 #Opening creidts
-cprint(figlet_format('Proxy Prober', font='big'), 'green', attrs=['bold'])
-cprint(figlet_format(' v.3.2 \nBy HydraPhoenix', font='small'), 'red')
+credits()
 
 #User input options
 while True:
