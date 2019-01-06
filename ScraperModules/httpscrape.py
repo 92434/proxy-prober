@@ -12,7 +12,6 @@ def httpscrape():
 
     #Opening credits
     openingcredits()
-
     #Clear contents of the output file
     file = open('OUTPUT/httpproxies.txt', 'w')
     file.write("")
