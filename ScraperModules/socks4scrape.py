@@ -2,7 +2,7 @@
 import requests
 import re
 from Functions.clear import clear
-from Functions.openingcredits import credits
+from Functions.openingcredits import openingcredits
 
 #Create the socks4scrape function
 def socks4scrape():
@@ -11,7 +11,7 @@ def socks4scrape():
     clear()
 
     #Opening credits
-    credits()
+    openingcredits()
 
     #Clear contents of the output file
     file = open('OUTPUT/socks4proxies.txt', 'w')

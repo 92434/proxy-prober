@@ -1,9 +1,8 @@
 # Import dependencies
 import requests
 import re
-import os
 from Functions.clear import clear
-from Functions.openingcredits import credits
+from Functions.openingcredits import openingcredits
 
 #Create the httpscrape function
 def httpscrape():
@@ -12,7 +11,7 @@ def httpscrape():
     clear()
 
     #Opening credits
-    credits()
+    openingcredits()
 
     #Clear contents of the output file
     file = open('OUTPUT/httpproxies.txt', 'w')

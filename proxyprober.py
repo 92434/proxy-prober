@@ -3,7 +3,7 @@ import os
 from ScraperModules.socks4scrape import socks4scrape
 from ScraperModules.httpscrape import httpscrape
 from ScraperModules.socks5scrape import socks5scrape
-from Functions.openingcredits import credits
+from Functions.openingcredits import openingcredits
 from Functions.clear import clear
 
 #Clear console
@@ -15,7 +15,7 @@ if not os.path.exists(outputdir):
     os.makedirs(outputdir)
 
 #Opening creidts
-credits()
+openingcredits()
 
 #User input options
 while True:
