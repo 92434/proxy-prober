@@ -5,7 +5,6 @@ from ScraperModules.httpscrape import httpscrape
 from ScraperModules.socks5scrape import socks5scrape
 from Functions.openingcredits import openingcredits
 from Functions.clear import clear
-from ScraperModules import variables
 from colorama import init
 
 #Enable ANSI escape character sequence support for Windows
